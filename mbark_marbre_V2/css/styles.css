@@ -1,0 +1,100 @@
+/* M'BARK MARBRE - MASTER BRAND SYSTEM V2.1 */
+:root {
+    --gold-accent: #c49a6c;
+    --gold-hover: #b08557;
+    --dark-charcoal: #1a1a1a;
+    --light-grey-bg: #f9f9f9;
+    --pure-white: #ffffff;
+    --cream-bg: #fcfaf5;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark-charcoal);
+    background-color: var(--pure-white);
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.playfair { font-family: 'Playfair Display', serif !important; }
+.tracking-widest { letter-spacing: 3px; }
+.text-gold { color: var(--gold-accent); }
+
+/* TOP BAR & NAVBAR */
+.top-bar { background-color: #1a1a1a; color: white; font-size: 0.7rem; letter-spacing: 1px; padding: 8px 0; text-transform: uppercase; }
+.btn-quote-top { background-color: var(--gold-accent); color: white !important; border-radius: 0; font-size: 0.65rem; padding: 3px 12px; text-transform: uppercase; text-decoration: none; transition: 0.3s; font-weight: 600; }
+.btn-quote-top:hover { background-color: var(--gold-hover); }
+
+.navbar { background-color: white !important; border-bottom: 1px solid #eee; padding: 1.5rem 0; }
+.navbar-brand { text-align: center; margin: 0 auto; }
+.branding-title { font-family: 'Playfair Display', serif; font-weight: 600; color: #111; text-transform: uppercase; letter-spacing: 4px; font-size: 1.6rem; line-height: 1; display: block; }
+.sub-branding { font-size: 0.6rem !important; color: #888; text-transform: uppercase; letter-spacing: 3px; display: block; margin-top: 5px; }
+
+.navbar-nav .nav-link { color: #444 !important; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1.5px; padding: 10px 15px !important; border-bottom: 2px solid transparent; transition: 0.3s; font-weight: 500; }
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active { color: var(--gold-accent) !important; border-bottom: 2px solid var(--gold-accent); }
+
+/* LUXURY BUTTONS */
+.btn-luxury { background-color: var(--gold-accent); color: white !important; border-radius: 0; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; padding: 12px 25px; border: none; transition: 0.3s; font-weight: 600; text-decoration: none; display: inline-block; }
+.btn-luxury:hover { background-color: var(--gold-hover); transform: translateY(-2px); }
+
+/* HERO SECTION - FULL WIDTH */
+.hero-section {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../images/hero-bg.png') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-top: 5px solid var(--gold-accent);
+    padding: 60px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 800px;
+}
+
+/* COLLECTION & PROJECT CARDS */
+.luxury-card {
+    background: white !important;
+    border-radius: 0 !important; /* Luxury Boutique = Sharp Edges */
+    overflow: hidden;
+    transition: 0.4s ease;
+    border: 1px solid #eee !important;
+    text-align: center;
+}
+.luxury-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.08) !important; border-color: var(--gold-accent) !important; }
+.luxury-img { width: 100% !important; height: 300px !important; object-fit: cover !important; border-bottom: 3px solid var(--gold-accent); }
+
+/* FULL SCREEN AUTH */
+.auth-wrapper {
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.auth-bg {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/hero-bg.png') center/cover no-repeat;
+    height: 100vh;
+}
+.auth-nav .nav-link {
+    background: transparent !important;
+    color: #aaa !important;
+    border: none !important;
+    border-bottom: 2px solid transparent !important;
+}
+.auth-nav .nav-link.active {
+    color: var(--dark-charcoal) !important;
+    border-bottom: 2px solid var(--gold-accent) !important;
+}
+.form-control-auth {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+    background: transparent;
+    padding: 12px 0;
+}
+.form-control-auth:focus {
+    box-shadow: none;
+    border-bottom-color: var(--gold-accent);
+}
